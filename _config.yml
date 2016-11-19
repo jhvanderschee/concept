@@ -28,6 +28,8 @@ collections:
     output: true
   team:
     output: false
+  testimonials:
+    output: false
 
 colorsets: 
   - default

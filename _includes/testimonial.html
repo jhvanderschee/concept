@@ -8,40 +8,19 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="testimonial">
+				{% assign sorted = site.testimonials | sort:"order_num" %}
+				{% for item in sorted %}
+				{% if item.active == true %}
+				{% cycle '<div class="col-md-6 animate-box">', '' %}
+					<div class="testimonial {% if item.selected %}fh5co-selected{% endif %}">
 						<blockquote>
-							<p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-							<p class="author"> <img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Mike Adam</cite></p>
+							<p>&ldquo;{{ item.description }}&rdquo;</p>
+							<p class="author"> <img src="{{ item.image_url }}" alt="{{ item.title }}"> <cite>&mdash; {{ item.title }}</cite></p>
 						</blockquote>
 					</div>
-
-					<div class="testimonial fh5co-selected">
-						<blockquote>
-							<p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-							<p class="author"><img src="images/person2.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Eric Miller</cite></p>
-						</blockquote>
-					</div>
-				</div>
-
-				<div class="col-md-6 animate-box">
-					<div class="testimonial fh5co-selected">
-						<blockquote>
-							<p>&ldquo;Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-							<p class="author"><img src="images/person3.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Eric Miller</cite></p>
-						</blockquote>
-					</div>
-
-					<div class="testimonial">
-						<blockquote>
-							<p>&ldquo;Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.&rdquo;</p>
-							<p class="author"><img src="images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Mike Adam</cite></p>
-						</blockquote>
-					</div>
-
-				</div>
-
-				
+				{% cycle '', '</div>' %}
+				{% endif %}
+				{% endfor %}
 
 			</div>
 		</div>
