@@ -1,0 +1,32 @@
+#fh5co-footer, .scrolled .fh5co-nav {background: #1a1a1a;}
+.fh5co-cover .overlay {background: rgba(0, 0, 0, 0);}
+.fh5co-nav a, .fh5co-nav ul li a,
+#fh5co-header .display-tc .or, #fh5co-counter .display-tc .or, .fh5co-cover .display-tc .or, #fh5co-header a,
+#fh5co-logo a:hover, #fh5co-started .fh5co-heading h2, .fh5co-heading h2, 
+#fh5co-header .display-tc h1 {color: #2c2c2c;}
+.fh5co-heading span {color: #828282; opacity: 0.5;}
+#fh5co-started .fh5co-heading p {color: #828282;}
+.copyright, #fh5co-footer .fh5co-footer-links li a {color: white; opacity: 0.7;} 
+.scrolled #fh5co-logo a:hover,
+#fh5co-footer .fh5co-widget h3, #fh5co-footer, .scrolled .fh5co-nav a, .copyright a, .fh5co-social-icons li a {color: white;}
+.fh5co-bg-section, #fh5co-testimonial {background: #f0f0f0;}
+#fh5co-services.border-bottom {
+    border-bottom: 2px solid #e3e3e3;
+    -webkit-box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0);
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0);
+}
+
+
+/* purple */
+.fh5co-nav ul li.active > a, .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active,
+.scrolled .fh5co-nav ul li.active a, .fh5co-nav #fh5co-logo a > span, a:hover, a:active, a:focus, a, #fh5co-header a:hover,
+#fh5co-blog .fh5co-post h3 a,
+.fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a, #fh5co-counter .counter {color: #6d5cae;}
+#fh5co-blog .fh5co-post h3 a:hover {color: #6d5cae; opacity: 0.6;}
+.scrolled .fh5co-nav ul li a:hover, .scrolled .fh5co-nav ul li a:focus, .scrolled .fh5co-nav ul li a:active {color: #6d5cae!important;}
+.feature-center:hover, .feature-center:focus, #fh5co-testimonial .testimonial.fh5co-selected, #fh5co-started .btn,
+#fh5co-header .display-tc .btn, #fh5co-counter .display-tc .btn, .fh5co-cover .display-tc .btn {background: #6d5cae;}
+#fh5co-testimonial .testimonial.fh5co-selected::after {border-color: #6d5cae transparent;}
+#fh5co-started .btn:hover,
+#fh5co-header .display-tc .btn:hover, #fh5co-counter .display-tc .btn:hover, .fh5co-cover .display-tc .btn:hover {background: #6d5cae!important;}

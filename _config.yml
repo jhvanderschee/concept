@@ -1,0 +1,43 @@
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: page
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio-item"
+
+permalink: /blog/:year/:month/:day/:title
+
+collections:
+  portfolio:
+    output: true
+  products:
+    output: true
+  team:
+    output: false
+
+colorsets: 
+  - default
+  - reversed
+
+input_types:
+  - text
+  - textarea
+  - email
+  - checkbox
+  - radio
+  - number
+  - submit

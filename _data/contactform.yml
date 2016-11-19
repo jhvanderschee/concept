@@ -1,0 +1,22 @@
+subscribe_form_to: jhvanderschee@gmail.com
+form_fields:
+  - name: naam
+    input_type: text
+    placeholder: Uw naam
+    required: true
+  - name: e-mail
+    input_type: email
+    placeholder: Uw e-mailadres
+    required: true
+  - name: onderwerp
+    input_type: text
+    placeholder: Het onderwerp van uw bericht
+    required: true
+  - name: bericht
+    input_type: textarea
+    placeholder: Uw bericht
+    required: true
+  - name: verstuur
+    input_type: submit
+    placeholder: Versturen
+    required: true
